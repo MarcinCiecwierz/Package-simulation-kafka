@@ -1,4 +1,4 @@
-# Package simulation
+# Package simulation kafka
 
 The project is designed to simulate how the proccess of posting package at shipping companies might look.<br>
 Project is created with a use of Spring Boot and Kafka. <br>
@@ -40,8 +40,6 @@ docker run -itd --name package-postgres -e POSTGRES_USER=myuser -e POSTGRES_PASS
 ```
 
 Run Kafka in docker (no need for zookeeper)
-
-## Kafka
 
 ```bash
 docker pull apache/kafka:4.0.0
