@@ -1,0 +1,170 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-08-25T15:27:04.805+02:00  INFO 2892 --- [Package-Notification] [           main] o.e.p.PackageNotificationApplication     : Starting PackageNotificationApplication v0.0.1-SNAPSHOT using Java 21.0.5 with PID 2892 (C:\Users\madec\OneDrive\Pulpit\Coding projects\package-line\backend\Package-Notification\target\Package-Notification-0.0.1-SNAPSHOT.jar started by madec in C:\Users\madec\OneDrive\Pulpit\Coding projects\package-line)
+2025-08-25T15:27:04.810+02:00  INFO 2892 --- [Package-Notification] [           main] o.e.p.PackageNotificationApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-25T15:27:07.275+02:00  INFO 2892 --- [Package-Notification] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25T15:27:07.524+02:00  INFO 2892 --- [Package-Notification] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 1 JPA repository interface.
+2025-08-25T15:27:09.429+02:00  INFO 2892 --- [Package-Notification] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2025-08-25T15:27:09.486+02:00  INFO 2892 --- [Package-Notification] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-25T15:27:09.488+02:00  INFO 2892 --- [Package-Notification] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-25T15:27:09.684+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-25T15:27:09.686+02:00  INFO 2892 --- [Package-Notification] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4760 ms
+2025-08-25T15:27:10.418+02:00  INFO 2892 --- [Package-Notification] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25T15:27:10.542+02:00  INFO 2892 --- [Package-Notification] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-25T15:27:10.616+02:00  INFO 2892 --- [Package-Notification] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-25T15:27:11.521+02:00  INFO 2892 --- [Package-Notification] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25T15:27:11.589+02:00  INFO 2892 --- [Package-Notification] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-25T15:27:12.206+02:00  INFO 2892 --- [Package-Notification] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7893c715
+2025-08-25T15:27:12.211+02:00  INFO 2892 --- [Package-Notification] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-25T15:27:12.348+02:00  INFO 2892 --- [Package-Notification] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25T15:27:13.520+02:00  INFO 2892 --- [Package-Notification] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25T15:27:13.611+02:00  INFO 2892 --- [Package-Notification] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25T15:27:14.856+02:00  WARN 2892 --- [Package-Notification] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25T15:27:16.611+02:00  INFO 2892 --- [Package-Notification] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2025-08-25T15:27:16.762+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-package-notification-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = package-notification-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-08-25T15:27:16.931+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-08-25T15:27:17.276+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.9.1
+2025-08-25T15:27:17.277+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f745dfdcee2b9851
+2025-08-25T15:27:17.277+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1756128437274
+2025-08-25T15:27:17.280+02:00  INFO 2892 --- [Package-Notification] [           main] o.a.k.c.c.i.ClassicKafkaConsumer         : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Subscribed to topic(s): packages, sorting, transport, delivery
+2025-08-25T15:27:17.306+02:00  INFO 2892 --- [Package-Notification] [           main] o.e.p.PackageNotificationApplication     : Started PackageNotificationApplication in 13.44 seconds (process running for 14.554)
+2025-08-25T15:27:18.149+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-08-25T15:27:18.150+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-08-25T15:27:18.153+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] (Re-)joining group
+2025-08-25T15:27:18.171+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Request joining group due to: need to re-join with the given member-id: consumer-package-notification-group-1-7dfddbe3-8125-4295-aef4-ec3e843ab76e
+2025-08-25T15:27:18.172+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] (Re-)joining group
+2025-08-25T15:27:21.260+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Successfully joined group with generation Generation{generationId=13, memberId='consumer-package-notification-group-1-7dfddbe3-8125-4295-aef4-ec3e843ab76e', protocol='range'}
+2025-08-25T15:27:21.265+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Finished assignment for group at generation 13: {consumer-package-notification-group-1-7dfddbe3-8125-4295-aef4-ec3e843ab76e=Assignment(partitions=[delivery-0, sorting-0, transport-0, packages-0])}
+2025-08-25T15:27:21.275+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Successfully synced group in generation Generation{generationId=13, memberId='consumer-package-notification-group-1-7dfddbe3-8125-4295-aef4-ec3e843ab76e', protocol='range'}
+2025-08-25T15:27:21.276+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Notifying assignor about the new Assignment(partitions=[delivery-0, sorting-0, transport-0, packages-0])
+2025-08-25T15:27:21.278+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-package-notification-group-1, groupId=package-notification-group] Adding newly assigned partitions: delivery-0, packages-0, sorting-0, transport-0
+2025-08-25T15:27:21.286+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition delivery-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=4}}
+2025-08-25T15:27:21.287+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition transport-0 to the committed offset FetchPosition{offset=11, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=4}}
+2025-08-25T15:27:21.287+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition sorting-0 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=6}}
+2025-08-25T15:27:21.287+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition packages-0 to the committed offset FetchPosition{offset=16, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=6}}
+2025-08-25T15:27:21.288+02:00  INFO 2892 --- [Package-Notification] [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : package-notification-group: partitions assigned: [delivery-0, packages-0, sorting-0, transport-0]
+{"eventType":"PackageCreated","packageId":"348d65e8-658f-41a3-967d-c59296a17ab4","sender":"123 123","receiver":"123 123","address":{"street":"123","streetNumber":"123","city":"123","code":"123"},"height":123,"width":123,"depth":123,"weight":0,"timestamp":[2025,8,25,15,27,27,300392300]}
+{"eventType":"PackageCreated","packageId":"af42318e-0d5f-4629-9cf0-87ac71b4bee4","sender":"123 123","receiver":"123 123","address":{"street":"123","streetNumber":"123","city":"123","code":"123"},"height":123,"width":123,"depth":123,"weight":0,"timestamp":[2025,8,25,15,27,29,670731500]}
+2025-08-25T15:27:51.157+02:00  INFO 2892 --- [Package-Notification] [nio-8084-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-25T15:27:51.157+02:00  INFO 2892 --- [Package-Notification] [nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-25T15:27:51.159+02:00  INFO 2892 --- [Package-Notification] [nio-8084-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+{"eventType":"PackageSorted","packageId":"348d65e8-658f-41a3-967d-c59296a17ab4","sortingCenter":"Olsztyn","address":{"street":"123","streetNumber":"123","city":"123","code":"123"},"timestamp":[2025,8,25,15,27,42,607174200]}
+{"eventType":"PackageSorted","packageId":"af42318e-0d5f-4629-9cf0-87ac71b4bee4","sortingCenter":"Olsztyn","address":{"street":"123","streetNumber":"123","city":"123","code":"123"},"timestamp":[2025,8,25,15,27,52,681872000]}
+{"eventType":"PackageTransport","packageId":"348d65e8-658f-41a3-967d-c59296a17ab4","courier":"Katarzyna Zieliñska","from":"Olsztyn","address":{"street":"123","streetNumber":"123","city":"123","code":"123"},"timestamp":[2025,8,25,15,27,52,844965400]}
+{"eventType":"PackageTransport","packageId":"af42318e-0d5f-4629-9cf0-87ac71b4bee4","courier":"Piotr Wiœniewski","from":"Olsztyn","address":{"street":"123","streetNumber":"123","city":"123","code":"123"},"timestamp":[2025,8,25,15,28,2,972906200]}
+{"eventType":"PackageDelivery","packageId":"348d65e8-658f-41a3-967d-c59296a17ab4","timestamp":[2025,8,25,15,28,3,123327100]}
+{"eventType":"PackageDelivery","packageId":"af42318e-0d5f-4629-9cf0-87ac71b4bee4","timestamp":[2025,8,25,15,28,13,198999000]}
